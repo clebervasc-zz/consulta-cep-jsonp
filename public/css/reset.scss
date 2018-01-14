@@ -1,0 +1,47 @@
+@import "./partial/_mixin";
+@import "./partial/_media-query";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+*{
+	margin: 0;
+	padding: 0;
+	border:0;
+	outline: none;
+}
+
+body{
+  font-size: 10px;
+  font-style: normal;
+  font-weight: normal;
+  background:white;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+$placeholder:#666;
+$title:#333;
+$bg:#ededed;
+
+section, header, footer, article{
+	width:100%;
+	float:left;
+	position: relative;
+}
+
+
+::-webkit-input-placeholder {
+	color:$placeholder;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+   color:$placeholder;
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+	color:$placeholder;
+ }
+ 
+ :-ms-input-placeholder {  
+	color:$placeholder;
+ }

@@ -1,0 +1,148 @@
+@import "reset.scss";
+
+#hero{
+
+    .container{
+        max-width: 700px;
+
+        @include media-query(xs){
+            max-width: 100%;
+        }
+    }
+
+    h1{
+        margin:0;padding:0;
+        font-weight: bold;
+        font-size:2.6em;
+        color:$title;
+        padding:10px 0;
+    }
+
+    .box{
+        width: 100%;
+        float:left;
+        position: relative;
+        background-color:$bg;
+        padding:10px;
+
+        form{
+
+            h3{
+                margin:0;padding:0;
+                font-size:1.8em;
+                font-weight: bold;
+                color:$title;
+                padding:10px;
+            }
+
+            .group{
+                width:100%;
+                float:left;
+                position: relative;
+                padding:10px;
+                display: flex;
+                align-items: baseline;
+                justify-content: flex-start;
+                @include media-query(xs){
+                    flex-direction: column;
+                    justify-content: space-around;
+                } 
+                
+                label{
+                    margin:0;padding:0;
+                    font-size:1.6rem;
+                    color:$placeholder;
+                    font-weight: 600;
+
+                    @include media-query(xs){
+                        width: 100%;
+                    } 
+                }
+
+                input, button{
+                    margin:0;padding:0;border:0;outline: none;
+                    height: 40px;
+                    @include border-radius(3px);
+                    margin-left: 20px;
+
+                    @include media-query(xs){
+                        width: 100%!important;
+                        margin:0;
+                    } 
+                }
+                div{
+                    @include media-query(xs){
+                        width: 100%;
+                        float:left;
+                        position: relative;
+                    } 
+                }
+                input{
+                    width:200px;
+                    
+                    font-size:1.6em;
+                    color:$placeholder;
+                    padding-left:10px;
+                    @include box-shadow(inset 0px 0px 0px 1px #a7a7a7);
+
+                    &:focus{
+                        @include box-shadow(inset 0px 0px 0px 1px black);
+                        @include transition(ease 0.86s box-shadow);
+                    }
+                }
+
+                button{
+                    width:150px;
+                    background-color:#52a7e0;
+                    color:white;
+                    font-weight: bold;
+                    font-size:1.6em;
+                    @include box-shadow(0px 0px 8px 0px rgba(0,0,0,0.2));
+
+                    &:hover{
+                        opacity: 0.9;
+                        @include transition(ease 0.86s opacity);
+                    }
+
+                    @include media-query(xs){
+                        margin-top:20px;
+                    }
+                }
+
+                .help-block {
+                    display: block;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    color: red;
+                    font-size: 1.2em;
+                    position: relative;
+                    left: 20px;
+                    top: 7px;
+
+                    @include media-query(xs){
+                        left:0;
+                    } 
+                }
+            }
+        }
+    }
+
+    #local {
+        width: 100%;
+        float: left;
+        position: relative;
+        @include box-shadow(inset 0px 0px 0px 1px $bg);
+        padding: 20px;
+        margin: 10px 0;
+
+        h1{
+            font-size:2.4em;
+            font-weight: bold;
+        }
+
+        p{
+            font-size:1.6em;
+            font-weight: 600;
+        }
+    }
+}

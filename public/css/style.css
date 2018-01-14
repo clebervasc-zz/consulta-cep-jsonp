@@ -1,0 +1,176 @@
+/* breakpoints */
+/* media query */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none; }
+
+body {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: normal;
+  background: white;
+  color: black;
+  font-family: 'Open Sans', sans-serif; }
+
+section, header, footer, article {
+  width: 100%;
+  float: left;
+  position: relative; }
+
+::-webkit-input-placeholder {
+  color: #666; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #666; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #666; }
+
+:-ms-input-placeholder {
+  color: #666; }
+
+#hero .container {
+  max-width: 700px; }
+  @media only screen and (min-width: 280px) and (max-width: 570px) {
+    #hero .container {
+      max-width: 100%; } }
+#hero h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 2.6em;
+  color: #333;
+  padding: 10px 0; }
+#hero .box {
+  width: 100%;
+  float: left;
+  position: relative;
+  background-color: #ededed;
+  padding: 10px; }
+  #hero .box form h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+    padding: 10px; }
+  #hero .box form .group {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start; }
+    @media only screen and (min-width: 280px) and (max-width: 570px) {
+      #hero .box form .group {
+        flex-direction: column;
+        justify-content: space-around; } }
+    #hero .box form .group label {
+      margin: 0;
+      padding: 0;
+      font-size: 1.6rem;
+      color: #666;
+      font-weight: 600; }
+      @media only screen and (min-width: 280px) and (max-width: 570px) {
+        #hero .box form .group label {
+          width: 100%; } }
+    #hero .box form .group input, #hero .box form .group button {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: none;
+      height: 40px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      border-radius: 3px;
+      margin-left: 20px; }
+      @media only screen and (min-width: 280px) and (max-width: 570px) {
+        #hero .box form .group input, #hero .box form .group button {
+          width: 100% !important;
+          margin: 0; } }
+    @media only screen and (min-width: 280px) and (max-width: 570px) {
+      #hero .box form .group div {
+        width: 100%;
+        float: left;
+        position: relative; } }
+    #hero .box form .group input {
+      width: 200px;
+      font-size: 1.6em;
+      color: #666;
+      padding-left: 10px;
+      -webkit-box-shadow: inset 0px 0px 0px 1px #a7a7a7;
+      -moz-box-shadow: inset 0px 0px 0px 1px #a7a7a7;
+      -ms-box-shadow: inset 0px 0px 0px 1px #a7a7a7;
+      -o-box-shadow: inset 0px 0px 0px 1px #a7a7a7;
+      box-shadow: inset 0px 0px 0px 1px #a7a7a7; }
+      #hero .box form .group input:focus {
+        -webkit-box-shadow: inset 0px 0px 0px 1px black;
+        -moz-box-shadow: inset 0px 0px 0px 1px black;
+        -ms-box-shadow: inset 0px 0px 0px 1px black;
+        -o-box-shadow: inset 0px 0px 0px 1px black;
+        box-shadow: inset 0px 0px 0px 1px black;
+        -webkit-transition: ease 0.86s box-shadow;
+        -moz-transition: ease 0.86s box-shadow;
+        -ms-transition: ease 0.86s box-shadow;
+        -o-transition: ease 0.86s box-shadow;
+        transition: ease 0.86s box-shadow; }
+    #hero .box form .group button {
+      width: 150px;
+      background-color: #52a7e0;
+      color: white;
+      font-weight: bold;
+      font-size: 1.6em;
+      -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+      -ms-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+      -o-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2); }
+      #hero .box form .group button:hover {
+        opacity: 0.9;
+        -webkit-transition: ease 0.86s opacity;
+        -moz-transition: ease 0.86s opacity;
+        -ms-transition: ease 0.86s opacity;
+        -o-transition: ease 0.86s opacity;
+        transition: ease 0.86s opacity; }
+      @media only screen and (min-width: 280px) and (max-width: 570px) {
+        #hero .box form .group button {
+          margin-top: 20px; } }
+    #hero .box form .group .help-block {
+      display: block;
+      margin-top: 0;
+      margin-bottom: 0;
+      color: red;
+      font-size: 1.2em;
+      position: relative;
+      left: 20px;
+      top: 7px; }
+      @media only screen and (min-width: 280px) and (max-width: 570px) {
+        #hero .box form .group .help-block {
+          left: 0; } }
+#hero #local {
+  width: 100%;
+  float: left;
+  position: relative;
+  -webkit-box-shadow: inset 0px 0px 0px 1px #ededed;
+  -moz-box-shadow: inset 0px 0px 0px 1px #ededed;
+  -ms-box-shadow: inset 0px 0px 0px 1px #ededed;
+  -o-box-shadow: inset 0px 0px 0px 1px #ededed;
+  box-shadow: inset 0px 0px 0px 1px #ededed;
+  padding: 20px;
+  margin: 10px 0; }
+  #hero #local h1 {
+    font-size: 2.4em;
+    font-weight: bold; }
+  #hero #local p {
+    font-size: 1.6em;
+    font-weight: 600; }
+
+/*# sourceMappingURL=style.css.map */
